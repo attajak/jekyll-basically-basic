@@ -23,10 +23,10 @@ repository: "attajak/jekyll-basically-basic"
 author:
   name: Attajak Janrak
   twitter: attajak
-  picture: "assets/images/1707133203259.jpg"
+  picture: "/assets/images/attajak.jpg"
 twitter_username: attajak
 github_username: attajak
-logo: "assets/images/1707133203259.jpg" # path of site logo, e.g. "/assets/images/logo.png"
+logo: "/assets/images/attajak.jpg" # path of site logo, e.g. "/assets/images/logo.png"
 google_analytics:
 disqus:
   shortname:
@@ -41,7 +41,7 @@ algolia:
 
 # Build settings
 # theme: jekyll-theme-basically-basic
-remote_theme: "mmistakes/jekyll-theme-basically-basic"
+remote_theme: "mmistakes/jekyll-theme-basically-basic@1.4.5"
 plugins: # previsously gems
   - jekyll-feed
   - jekyll-seo-tag
