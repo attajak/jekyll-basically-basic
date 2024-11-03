@@ -1,4 +1,5 @@
 # @attajak
+[![Deploy Jekyll site to Pages](https://github.com/attajak/jekyll-basically-basic/actions/workflows/jekyll.yml/badge.svg)](https://github.com/attajak/jekyll-basically-basic/actions/workflows/jekyll.yml)
 
 ## Attajak Janrak
 
@@ -38,6 +39,7 @@ Outlook: | [Attajak at Outlook.com](mailto:attajak@outlook.com)
 
 ---
 
+<!--
 ### Welcome
 
 - 👋 Hi, I’m @attajak
@@ -45,6 +47,7 @@ Outlook: | [Attajak at Outlook.com](mailto:attajak@outlook.com)
 - 🌱 I’m currently learning ... jekyll, hugo
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ...
+-->
 
 <!---
 attajak/attajak is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
