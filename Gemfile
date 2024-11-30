@@ -15,8 +15,6 @@ group :jekyll_plugins do
   gem "jekyll-remote-theme"
 end
 
-# gem "jekyll-theme-basically-basic"
-
 gem "webrick"
 
 gem "jekyll-compose", group: [:jekyll_plugins]

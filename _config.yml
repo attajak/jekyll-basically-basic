@@ -14,14 +14,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 lang: en-US
-title: Attajak's blog
+title: "Attajak's blog"
 email: janrak@gmail.com
-description: "Attajak's blog"
+description: "Jekyll + Jekyll-theme-basically-basic"
 baseurl: /jekyll-basically-basic # the optional subpath of your site, e.g. "/blog"
 url: https://attajak.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 repository: "attajak/jekyll-basically-basic"
 author:
   name: Attajak Janrak
+  facebook: attajak
   twitter: attajak
   picture: "/assets/images/attajak.jpg"
 twitter_username: attajak
@@ -47,10 +48,12 @@ plugins: # previsously gems
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-jemoji
+  - jekyll-gist
 
 # Jekyll Feed
 feed:
-  path: atom.xml
+  path: feed.xml
 
 # Conversion
 markdown: kramdown
@@ -75,16 +78,19 @@ sass:
   style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 # Outputting
-permalink: pretty # /:categories/:title/
+permalink: /posts/:categories/:title/
 timezone: Asia/Bangkok # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Pagination - https://jekyllrb.com/docs/pagination/
 paginate: 10
 paginate_path: /page:num/
 
-# Exclude from processing.
+# Include/Exclude from processing.
+include:
+  - _pages
 exclude:
   - .asset-cache
+  - .jekyll-metadata
   - .bundle
   - .codeclimate.yml
   - .editorconfig
@@ -96,6 +102,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - LICENSE
+  - package-lock.json
   - node_modules
   - Rakefile
   - README
@@ -117,3 +124,26 @@ defaults:
     values:
       layout: post
       read_time: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: page
+      permalink: /:title/
+
+# Jekyll-compose
+jekyll_compose:
+  default_front_matter:
+    drafts:
+      description:
+      image:
+      category:
+      tags:
+    posts:
+      description:
+      image:
+      category:
+      tags:
+      published: false
+      sitemap: false
